@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body {
+    top: 0;
+    text-align: center;
+    background-color: black;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    color: white;
+
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(128, 128, 128, 0.2);
+    z-index: -1;
+  }
+
+  #contributions {
+    color: darksalmon;
+    border-bottom: 2px solid;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  h1 {
+    color: salmon;
+    border-bottom: 1px solid;
+  }
+
+  h2 {
+    border: 0.5px solid darksalmon;
+  }
+
+  /* head {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  } */
+
+  .Projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    color: rgb(238, 234, 234);
+    justify-content: center;
+  }
+
+  #Project {
+    width: 45%;
+    padding: 2%;
+    border-radius: 5%;
+    color: rgb(248, 248, 248);
+
+  }
+
+  a:link {
+    color: white;
+  }
+
+  a:hover {
+    color: blue;
+  }
+
+  a:visited {
+    color: darksalmon;
+  }
+
+  #mainheader {
+    color: darksalmon;
+    border-bottom: 2px solid;
+  }
+
+  #top {
+    color: darksalmon;
+    border-bottom: 2px solid;
+  }
+</style>
+
+<head>
+  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div class="background">
+    <h1 id="top">Gagan Hegde : About me</h1>
+    <h3>My name is Gagan Hegde.</h3>
+    <h3>I live in New York, United States.</h3>
+    <h3>I write code to brighten a bad day as well to make a good day better.</h3>
+    <h3>As my portfolio will show you, I am keen on learning new technologies. I do believe theres no stopping when it
+      comes to learning.</h3>
+    <h3>I worked as an associate the worlds largest transport company, helping them decrease reliability on google maps
+      and improve accuracy in matching between riders and drivers.</h3>
+    <h3>I worked for RedHat as a research engineer helping build cloud native tools on top of the PaaS OpenShift</h3>
+    <h3>I have sucessfully overseen the lifecycle of product development, right from the advent stages to the release.
+    </h3>
+    <h3>In my spare time I do contribute to Open source projects.</h3>
+    <h3>I would love to be part of your journey if we can compliment each other with the stuff we know and learn.</h3>
+  </div>
+  <div class="contributions">
+    <h1>A little bit of what I do</h1>
+    <h3><a href="https://www.scirp.org/journal/paperinformation.aspx?paperid=76537">Paper publication at the WICOM
+        international conference in China.</a></h3>
+    <h3><a href="https://github.com/redhat-developer/kam">Kubernetes application manager: A tool that allows you to
+        achieve
+        end to end application delivery using
+        Tekton
+        pipeline.</a></h3>
+    <h3><a href="https://github.com/argoproj/argo-cd/commit/ac1808b1bee8f187e848fa314ba21afd549abd16">An ArgoCd open
+        source
+        bug fix facilliate users to prevent CRLF errors.</a></h3>
+    <h3><a href="https://github.com/redhat-developer/gitops-operator">The Gitops Operator: An operator with a
+        reconcillation loop that ensures dependecies required for Gitops
+        are
+        everpresent.</a></h3>
+    <h3><a href="https://github.com/a3y3/crust">Crust: Stands for CHORD + Rust, a tool that allows users to visualize
+        distributed hash tables
+        efficiently.
+      </a></h3>
+    <h3><a href="https://github.com/argoproj/argo-cd/commit/c26573369d508f2599f2082fa6d21d1a261c7419">Project status
+        tracker feature for ArgoCD</a></h3>
+  </div>
+  <h1 id="mainheader">A little more...</h1>
+  <div class="Projects">
+    <div id="Project"><img class="image" src="assets/Qtpi.gif" width="70%" height="70%">
+      <h2>Moodle Plug-in.</h2>
+      <h3>
+        <bold>Technology involved: PHp, Javascript, css, HTML5, moodle plug in architecture, google maps API</bold>
+      </h3>
+      <p>Description: Responsive plug-in that can be incorporated into the moodle architecture, Maps tutors to the
+        respective
+        Schools and vice versa, allows for the search of the nearest tutors in the vicinity based on the users current
+        location
+      </p>
+
+    </div>
+    <div id="Project"><img class="image" src="assets/Dutch2.gif" width="20%" height="70%">
+      <h2>Go-Dutch</h2>
+      <h3>
+        <bold>Technology involved: Flutter, Dart, Firebase, Google Auth, Flutery library</bold>
+      </h3>
+      <p>Description: An application built for both the android and the ioS platforms using Flutter a cross platform
+        development environment,
+        the application is based on the famous splitwise application where the users can actively split money by
+        actively creating groups.
+        Flutter has now actively broadened its scope to create applications even for the web.
+
+      </p>
+
+    </div>
+    <div id="Project"><img class="image" src="assets/PythonApi.gif" width="70%" height="70%">
+      <h2>Python Compiler Api</h2>
+      <h3>
+        <bold>Technology involved: Node , Javascript ES6, Express, Postman, AWS</bold>
+      </h3>
+      <p>Description: An API whose endpoint when used returns the pythin code results that were passed using the
+        key value pair in JSon with the following format {"code":"actual code"}, the given process uses the child
+        process on the parent server.
+        The implementation showcased in the .gif file is was run on the local server where python 3 was installed.
+
+      </p>
+
+    </div>
+    <div id="Project"><img class="image" src="assets/APP.gif" width="20%" height="70%">
+      <h2>Banana Chomp</h2>
+      <h3>
+        <bold>Technology involved: Android, Java, Advanced OOPs concepts, Inhertitance, LibGdx library, tile-maps,
+          sprites
+        </bold>
+      </h3>
+      <p>Description: Just a game made that is available on the andorid store, turns out making a game is the best way
+        to
+        get a hold of the
+        concepts of Javas abstract classes, Inheritance concepts, and Object Oriented concepts. The game is a
+        rudimentary
+        implementation of how
+        a monkey jumps over logs as obstacles as it approcahes the Banana , collision causes the game to end. The final
+        goal is to get grasp of the Banana.
+
+      </p>
+    </div>
+    <div id="Project"><img class="image" src="assets/ISTE.gif" width="70%" height="75%">
+      <h2>Valentines (Dynamic Form)</h2>
+      <h3>
+        <bold>Technology involved: HTML5, AJAX, CSS3, Javascript, Cookies and Local Storage</bold>
+      </h3>
+      <p>Description: Involves an implementation of how different form elements can be generated using jaavscript,
+        the different form elements are rendrered after getting its content from an AJAX call. The elements are then
+        renderered directly. A small look at the console will indicate the power involved in creating dynamic elements
+        using Javascipts
+        ES6 standard.
+
+      </p>
+    </div>
+
+  </div>
+  <div>
+    <h1>A little bit of what I do</h1>
+    <h3><a href="https://www.scirp.org/journal/paperinformation.aspx?paperid=76537">Paper publication at the WICOM
+        international conference in China.</a></h3>
+    <h3><a href="https://github.com/redhat-developer/kam">Kubernetes application manager: A tool that allows you to
+        achieve
+        end to end application delivery using
+        Tekton
+        pipeline.</a></h3>
+    <h3><a href="https://github.com/argoproj/argo-cd/commit/ac1808b1bee8f187e848fa314ba21afd549abd16">An ArgoCd open
+        source
+        bug fix facilliate users to prevent CRLF errors.</a></h3>
+    <h3><a href="https://github.com/redhat-developer/gitops-operator">The Gitops Operator: An operator with a
+        reconcillation loop that ensures dependecies required for Gitops
+        are
+        everpresent.</a></h3>
+    <h3><a href="https://github.com/a3y3/crust">Crust: Stands for CHORD + Rust, a tool that allows users to visualize
+        distributed hash tables
+        efficiently.
+      </a></h3>
+    <h3><a href="https://github.com/argoproj/argo-cd/commit/c26573369d508f2599f2082fa6d21d1a261c7419">Project status
+        tracker feature for ArgoCD</a></h3>
+  </div>
+
+</body>
+
+</html>

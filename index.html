@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <title>title</title>
+
+</head>
+
+<body>
+  <!-- <div class="main"> -->
+  <div class="animation">
+    <!-- <img style = "width:50vw;height:50vh;margin:auto" src="/Users/gaganhegde/Downloads/trial.png"/> -->
+    <p class="first">NOT&nbsp </p>
+    <p class="second">YOUR&nbsp </p>
+    <p class="third">AVERAGE&nbsp </p>
+    <p class="fourth">DEVELOPER</p>
+    <div>
+      <div>
+        <button class="button" style="vertical-align:middle" onclick="Transition()"><span>Click here </span></button>
+      </div>
+      <div class="copy">
+      </div>
+      <!-- </div> -->
+
+
+
+
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+      <script>
+        var timeline = new TimelineMax();
+        // TweenMax.from('.animation',2,{opacity:1,y:100});
+        timeline.from('.first', 1, { opacity: 0 });
+        timeline.from('.second', 1, { opacity: 0 });
+        timeline.from('.third', 1, { opacity: 0 });
+        timeline.from('.fourth', 1, { opacity: 0 });
+
+
+      </script>
+      <script>
+
+        var delay = 1000;
+        function Transition() {
+          window.location.href = 'Homepage.html';
+        }
+      </script>
+</body>
+
+</html>
